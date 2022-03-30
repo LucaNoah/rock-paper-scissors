@@ -38,7 +38,8 @@ function runGame(gameType) {
 }
 
 /**
- * Make a number out of the gameType & determine if player or computer wins.
+ * Make a number out of the gameType, determine if player or computer wins &
+ * increase score of winner by 1
  */
 function determineWinner(gameType, choiceComputer) {
 
