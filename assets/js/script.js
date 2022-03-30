@@ -34,6 +34,35 @@ function runGame(gameType) {
   }else if (gameType === ('scissors')) {
     document.getElementById('player1').innerHTML = 'scissors';
   }
+  determineWinner(gameType, choiceComputer);
 }
 
+/**
+ * Make a number out of the gameType & determine if player or computer wins.
+ */
+function determineWinner(gameType, choiceComputer) {
 
+  if (gameType === 'rock') {
+    choicePlayer = 0;
+  } else if (gameType === 'paper') {
+    choicePlayer = 1;
+  } else if (gameType === 'scissors') {
+    choicePlayer = 2;
+  }
+
+  if (choicePlayer === choiceComputer) {
+    document.getElementById('winner').innerHTML = 'Draw, no one wins!';
+  } else if (choicePlayer === 0 && choiceComputer === 1) {
+    document.getElementById('winner').innerHTML = 'Computer wins!';
+  } else if (choicePlayer === 0 && choiceComputer === 2) {
+    document.getElementById('winner').innerHTML = 'Player wins!';
+  } else if (choicePlayer === 1 && choiceComputer === 0) {
+    document.getElementById('winner').innerHTML = 'Player wins!';
+  } else if (choicePlayer === 1 && choiceComputer === 2) {
+    document.getElementById('winner').innerHTML = 'Computer wins!';
+  } else if (choicePlayer === 2 && choiceComputer === 0) {
+    document.getElementById('winner').innerHTML = 'Computer wins!';
+  } else if (choicePlayer === 2 && choiceComputer === 1) {
+    document.getElementById('winner').innerHTML = 'Player wins!';
+  }
+}
