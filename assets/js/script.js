@@ -42,6 +42,9 @@ function runGame(gameType) {
  */
 function determineWinner(gameType, choiceComputer) {
 
+  let scorePlayer = parseInt(document.getElementById('playerScore').innerText);
+  let scoreComputer = parseInt(document.getElementById('computerScore').innerText);
+
   if (gameType === 'rock') {
     choicePlayer = 0;
   } else if (gameType === 'paper') {
@@ -54,15 +57,21 @@ function determineWinner(gameType, choiceComputer) {
     document.getElementById('winner').innerHTML = 'Draw, no one wins!';
   } else if (choicePlayer === 0 && choiceComputer === 1) {
     document.getElementById('winner').innerHTML = 'Computer wins!';
+    document.getElementById('computerScore').innerText = ++scoreComputer;
   } else if (choicePlayer === 0 && choiceComputer === 2) {
     document.getElementById('winner').innerHTML = 'Player wins!';
+    document.getElementById('playerScore').innerText = ++scorePlayer;
   } else if (choicePlayer === 1 && choiceComputer === 0) {
     document.getElementById('winner').innerHTML = 'Player wins!';
+    document.getElementById('playerScore').innerText = ++scorePlayer;
   } else if (choicePlayer === 1 && choiceComputer === 2) {
     document.getElementById('winner').innerHTML = 'Computer wins!';
+    document.getElementById('computerScore').innerText = ++scoreComputer;
   } else if (choicePlayer === 2 && choiceComputer === 0) {
     document.getElementById('winner').innerHTML = 'Computer wins!';
+    document.getElementById('computerScore').innerText = ++scoreComputer;
   } else if (choicePlayer === 2 && choiceComputer === 1) {
     document.getElementById('winner').innerHTML = 'Player wins!';
+    document.getElementById('playerScore').innerText = ++scorePlayer;
   }
 }
