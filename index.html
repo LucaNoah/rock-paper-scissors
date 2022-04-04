@@ -9,31 +9,44 @@
   <title>Document</title>
 </head>
 <body>
+  <!--page heading-->
   <header>
     <h1 class="heading">ROCK, PAPER, SCISSORS!</h1>
   </header>
-  
-  <div class="choose">
-    <h2>Choose:</h2>
-    <button data-type="rock" class="btn-choose">Rock</button>
-    <button data-type="paper" class="btn-choose">Paper</button>
-    <button data-type="scissors" class="btn-choose">Scissors</button>
-  </div>
-
-  <div id="score">
-    <h3>Player Score: <span id="playerScore">0</span></h3>
-    <h3>Computer Score: <span id="computerScore">0</span></h3>
-  </div>
-
-  <div class="game">
-    <div id="player1"></div>
-    <div id="player2"></div>
-  </div>
-
-  <div class="winner">
-    <h2 id="winner"></h2>
-  </div>
-
+  <!--main/game section-->
+  <main>
+    <section class="choose">
+      <h2>Choose:</h2>
+      <button data-type="rock" class="btn-choose">Rock</button>
+      <button data-type="paper" class="btn-choose">Paper</button>
+      <button data-type="scissors" class="btn-choose">Scissors</button>
+    </section>
+    
+    <section id="score">
+      <p>Player Score: <span id="playerScore">0</span></p>
+      <p>Computer Score: <span id="computerScore">0</span></p>
+    </section>
+    
+    <section class="game">
+      <div id="player1-outer">
+        <h2>Player</h2>
+        <div id="player1"></div>
+      </div>
+      <div id="player2-outer">
+        <h2>Computer</h2>
+        <div id="player2"></div>
+      </div>
+    </section>
+    
+    <section class="winner">
+      <h2 id="winner"></h2>
+    </section>
+  </main>
+  <!--page footer-->
+  <footer>
+    <h2>Rules:</h2>
+    <p>Rock crushes scissors, scissors cut paper, and paper covers rock.</p>
+  </footer>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
