@@ -7,17 +7,17 @@ document.addEventListener('DOMContentLoaded', function() {
     choiceP1.addEventListener('click', function() {
       let gameType = this.getAttribute('data-type');
       runGame(gameType);
-    })
+    });
   }
-})
+});
 
 /**
  * The main game function, called when the user made a choice.
  */
 function runGame(gameType) {
 
-  //create a random number between 0 and 2
-  let choiceComputer = Math.floor(Math.random() * 3)
+  //Create a random number between 0 and 2
+  let choiceComputer = Math.floor(Math.random() * 3);
 
   if (choiceComputer === 0) {
     document.getElementById('player2').innerHTML = 'rock';
@@ -45,6 +45,7 @@ function determineWinner(gameType, choiceComputer) {
 
   let scorePlayer = parseInt(document.getElementById('playerScore').innerText);
   let scoreComputer = parseInt(document.getElementById('computerScore').innerText);
+  let choicePlayer;
 
   if (gameType === 'rock') {
     choicePlayer = 0;
