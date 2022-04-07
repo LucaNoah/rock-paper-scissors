@@ -51,12 +51,15 @@ h1 {
 
 /*score section*/
 #playerScore {
-  color: blue;
+  background-color: #00ffff;
+  border-radius: 33%;
 }
 
 #computerScore {
-  color: red;
+  background-color: #c3f803;
+  border-radius: 33%;
 }
+
 
 /*game section*/
 #player1-outer {
@@ -71,7 +74,7 @@ h1 {
 }
 
 #player2-outer {
-  background-color: #a52a2a;
+  background-color: #c3f803;
   width: 400px;
   height: 400px;
   display: inline-block;
