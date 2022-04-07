@@ -20,19 +20,19 @@ function runGame(gameType) {
   let choiceComputer = Math.floor(Math.random() * 3);
 
   if (choiceComputer === 0) {
-    document.getElementById('player2').innerHTML = 'rock';
+    document.getElementById('player2').innerHTML = '<img src="assets/images/rock.png" alt="rock">';
   } else if (choiceComputer === 1) {
-    document.getElementById('player2').innerHTML = 'paper';
+    document.getElementById('player2').innerHTML = '<img src="assets/images/paper.png" alt="paper">';
   } else if (choiceComputer === 2) {
-    document.getElementById('player2').innerHTML = 'scissors';
+    document.getElementById('player2').innerHTML = '<img src="assets/images/scissors.png" alt="scissors">';
   }
 
   if (gameType === ('rock')) {
-    document.getElementById('player1').innerHTML = 'rock';
+    document.getElementById('player1').innerHTML = '<img src="assets/images/rock.png" alt="rock">';
   } else if (gameType === ('paper')) {
-    document.getElementById('player1').innerHTML = 'paper';
+    document.getElementById('player1').innerHTML = '<img src="assets/images/paper.png" alt="paper">';
   }else if (gameType === ('scissors')) {
-    document.getElementById('player1').innerHTML = 'scissors';
+    document.getElementById('player1').innerHTML = '<img src="assets/images/scissors.png" alt="scissors">';
   }
   determineWinner(gameType, choiceComputer);
 }
