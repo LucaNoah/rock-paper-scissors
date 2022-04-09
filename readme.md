@@ -37,7 +37,7 @@ Likewise, everyone is invited to play this legendary game for fun.
 
 ### Winner Section
 - Indicates in words the winner of the game just played.
-- Bevor der Spieler eine Auswahl getroffen hat, wird hier nichts angezeigt.
+- Before the player has made a selection, nothing is displayed here.
 - As soon as the player has made his selection, the winner or a draw is immediately displayed here.
 
 ![Screenshot of the winner section when game has not started](assets/images/screenshot-winner-section-1.PNG)
@@ -55,7 +55,7 @@ Likewise, everyone is invited to play this legendary game for fun.
 ---
 - I tested that this page work in different browsers: Chrome Firefox & Microsoft Edge.
 - I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the DevTools device toolbar.
-- I confirmed that the websites text is all rideable and easy to understand.
+- I confirmed that the websites text is all readeable and easy to understand.
 
 ### Validator Testing
 - HTML
@@ -92,4 +92,6 @@ The live link ca be found here - [ROCK, PAPER, SCISSORS!](https://lucanoah.githu
 ## Credits
 ---
 I got the buttons hover shadow effect (line 50 in style.css file) from here - [W3schools](https://www.w3schools.com/css/css3_buttons.asp)
+
+
 
