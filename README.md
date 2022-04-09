@@ -1,5 +1,5 @@
 # ROCK, PAPER, SCISSORS!
---- 
+
 ROCK, PAPER, SCISSORS! is a website that wants to show the user the use of JavaScript in a realistic application by means of a small but legendary game. 
 
 Likewise, everyone is invited to play this legendary game for fun.
