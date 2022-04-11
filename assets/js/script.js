@@ -25,10 +25,6 @@ function runGame(gameType) {
     document.getElementById('player2').innerHTML = '<img src="assets/images/paper.png" alt="paper">';
   } else if (choiceComputer === 2) {
     document.getElementById('player2').innerHTML = '<img src="assets/images/scissors.png" alt="scissors">';
-    // defensive programming
-  } else if (choiceComputer !== 0 || 1 || 2) {
-    document.getElementById('player2').innerHTML = 'ERROR';
-    alert(`Unknown choice Computer: ${choiceComputer}`);
   }
 
   if (gameType === ('rock')) {
@@ -38,7 +34,7 @@ function runGame(gameType) {
   }else if (gameType === ('scissors')) {
     document.getElementById('player1').innerHTML = '<img src="assets/images/scissors.png" alt="scissors">';
     // defensive programming
-  } else if (gameType !== 'rock' || 'paper' || 'scissors') {
+  } else {
     document.getElementById('player1').innerHTML = 'ERROR';
     alert(`Unknown game type: ${gameType}`);
   }
@@ -84,9 +80,9 @@ function determineWinner(gameType, choiceComputer) {
     document.getElementById('winner').innerHTML = 'Player wins!';
     document.getElementById('playerScore').innerText = ++scorePlayer;
     // defensive programming
-  } else if (choicePlayer && choiceComputer !== 0 || 1 || 2) {
+  } else {
     document.getElementById('winner').innerHTML = 'ERROR';
-    alert(`Unknown choice player or choice computer: ${choicePlayer} & ${choiceComputer}`);
+    alert(`Unknown choice player and/or choice computer: ${choicePlayer} and/or ${choiceComputer}`);
   }
 }
 

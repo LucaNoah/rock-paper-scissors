@@ -91,7 +91,7 @@ The live link ca be found here - [ROCK, PAPER, SCISSORS!](https://lucanoah.githu
 
 ## Credits
 ---
-I got the buttons hover shadow effect (line 50 in style.css file) from here - [W3schools](https://www.w3schools.com/css/css3_buttons.asp)
+I got the buttons hover shadow effect (line 51 in style.css file) from here - [W3schools](https://www.w3schools.com/css/css3_buttons.asp)
 
 
 
