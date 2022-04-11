@@ -23,7 +23,7 @@ Likewise, everyone is invited to play this legendary game for fun.
 
 ### Score Section
 - Shows the current score of the user and that of the computer.
-- Shows the current score of the user and that of the computer.
+- The background of the number, is colored in the corresponding color.
 
 ![Screenshot of the score section](assets/images/screenshot-score-section.PNG)
 
@@ -53,7 +53,7 @@ Likewise, everyone is invited to play this legendary game for fun.
 
 ## Testing
 ---
-- I tested that this page work in different browsers: Chrome Firefox & Microsoft Edge.
+- I tested that this page work in different browsers: Chrome, Firefox & Microsoft Edge.
 - I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the DevTools device toolbar.
 - I confirmed that the websites text is all readeable and easy to understand.
 
