@@ -87,7 +87,7 @@ The site was deployed to GitHub pages. The steps to deploy are:
 - From the source section drop-down menu, select the Master Branch.
 - Once the Master Branch has been selected, the page provided the link to the completed website.
 
-The live link ca be found here - [ROCK, PAPER, SCISSORS!](https://lucanoah.github.io/Portfolio-Project-2/)
+The live link ca be found here - [ROCK, PAPER, SCISSORS!](https://lucanoah.github.io/rock-paper-scissors/)
 
 ## Credits
 ---
